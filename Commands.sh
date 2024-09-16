@@ -1,5 +1,4 @@
 # Containers
-
 # Create and run a container from an image, with a custom name:
 docker run --name <container_name> <image_name>
 # Run a container with and publish a container’s port(s) to the host.
@@ -52,8 +51,6 @@ docker -d
 docker --help
 # Display system-wide information
 docker info
-
-
 
 
 docker ps
