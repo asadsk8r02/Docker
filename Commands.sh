@@ -1,10 +1,4 @@
-docker ps
-docker run ubuntu
-docker run -it ubuntu
-docker run -d postgres/ubuntu
-
-docker stop <Container ID>
-
+# Containers
 
 # Create and run a container from an image, with a custom name:
 docker run --name <container_name> <image_name>
@@ -28,3 +22,43 @@ docker ps
 docker ps --all
 # View resource usage stats
 docker container stats
+
+# Images
+# Build an Image from a Dockerfile
+docker build -t <image_name>
+# Build an Image from a Dockerfile without the cache
+docker build -t <image_name> . –no-cache
+# List local images
+docker images
+# Delete an Image
+docker rmi <image_name>
+# Remove all unused images
+docker image prune 
+
+# Docker Hub
+# Login into Docker
+docker login -u <username>
+# Publish an image to Docker Hub
+docker push <username>/<image_name>
+# Search Hub for an image
+docker search <image_name>
+# Pull an image from a Docker Hub
+docker pull <image_name>
+
+# General
+# Start the docker daemon
+docker -d
+# Get help with Docker. Can also use –help on all subcommands
+docker --help
+# Display system-wide information
+docker info
+
+
+
+
+docker ps
+docker run ubuntu
+docker run -it ubuntu
+docker run -d postgres/ubuntu
+
+docker stop <Container ID>
