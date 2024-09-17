@@ -1,6 +1,7 @@
 t# Containers
 # Create and run a container from an image, with a custom name:
 docker run --name <container_name> <image_name>
+docker run -it --name <container_name> <image_name>
 # Run a container with and publish a container’s port(s) to the host.
 docker run -p <host_port>:<container_port> <image_name>
 # Run a container in the background
