@@ -62,6 +62,8 @@ docker push <username>/<image_name>
 docker search <image_name>
 # Pull an image from a Docker Hub
 docker pull <image_name>
+# Details of the image
+docker inspect <Image_name>
 
 # General
 # Start the docker daemon
