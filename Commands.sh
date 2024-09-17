@@ -64,6 +64,8 @@ docker search <image_name>
 docker pull <image_name>
 # Details of the image
 docker inspect <Image_name>
+# Delete the image
+docker image rm <Image_name>
 
 # General
 # Start the docker daemon
