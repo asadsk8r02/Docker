@@ -1,4 +1,4 @@
-t# Containers
+# Containers
 # Create and run a container from an image, with a custom name:
 docker run --name <container_name> <image_name>
 docker run -it --name <container_name> <image_name>
