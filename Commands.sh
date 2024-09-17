@@ -41,6 +41,18 @@ docker ps -aqf "name=<contianer_name>"
 # Filter by name 
 docker ps -f "name=<contianer_name>"
 
+# =====================================================
+
+# Docker container pruning
+# All containers
+docker container prune
+# Prune all stopped containers from a specific image
+docker rm $(docker ps -a -q -f "status=exited" -f "ancestor=<images_name>")
+# Prune all the running containers from a specific image
+docker rm -f $(docker ps -a -q "ancestor=<image_name>")
+
+# =====================================================
+
 # Images
 # Build an Image from a Dockerfile
 docker build -t <image_name>
@@ -52,6 +64,8 @@ docker images
 docker rmi <image_name>
 # Remove all unused images
 docker image prune 
+
+# =====================================================
 
 # Docker Hub
 # Login into Docker
@@ -67,6 +81,8 @@ docker inspect <Image_name>
 # Delete the image
 docker image rm <Image_name>
 
+# =====================================================
+
 # General
 # Start the docker daemon
 docker -d
@@ -74,11 +90,5 @@ docker -d
 docker --help
 # Display system-wide information
 docker info
-
-
-docker ps
-docker run ubuntu
-docker run -it ubuntu
-docker run -d postgres/ubuntu
 
 docker stop <Container ID>
