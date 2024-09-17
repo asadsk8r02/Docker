@@ -49,7 +49,7 @@ docker container prune
 # Prune all stopped containers from a specific image
 docker rm $(docker ps -a -q -f "status=exited" -f "ancestor=<images_name>")
 # Prune all the running containers from a specific image
-docker rm -f $(docker ps -a -q "ancestor=<image_name>")
+docker rm -f $(docker ps -a -q -f "ancestor=<image_name>")
 
 # =====================================================
 
