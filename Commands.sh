@@ -7,6 +7,7 @@ docker run -p <host_port>:<container_port> <image_name>
 docker run -d <image_name>
 # Start or stop an existing container:
 docker start|stop <container_name> (or <container-id>)
+docker start|stop -i <container_name> (or <container-id>)
 # Remove a stopped container:
 docker rm <container_name>
 # Open a shell inside a running container:
