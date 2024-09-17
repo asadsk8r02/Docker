@@ -23,6 +23,8 @@ docker ps
 docker ps --all
 # View resource usage stats
 docker container stats
+# Get id by name of container
+docker ps -aqf "name=<contianer_name>"
 
 # Images
 # Build an Image from a Dockerfile
