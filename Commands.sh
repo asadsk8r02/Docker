@@ -64,6 +64,7 @@ docker images
 docker rmi <image_name>
 # Remove all unused images
 docker image prune 
+docker image prune -a
 
 # =====================================================
 
