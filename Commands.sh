@@ -38,6 +38,8 @@ docker ps --all
 docker container stats
 # Get id by name of container
 docker ps -aqf "name=<contianer_name>"
+# Filter by name 
+docker ps -f "name=<contianer_name>"
 
 # Images
 # Build an Image from a Dockerfile
