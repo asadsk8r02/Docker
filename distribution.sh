@@ -12,3 +12,6 @@ docker save -o asad_file.tar asad:v2
 
 # Open the tar file
 docker load -i <file_name>
+
+# Pulling from private repo
+docker pull <private-registry-url›/<image-name>
