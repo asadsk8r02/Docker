@@ -9,3 +9,6 @@ docker image push <private_docker_repository_URL>/<image_name>
 # Save image as a file
 docker save -o <file_name>.tar <image_name>
 docker save -o asad_file.tar asad:v2
+
+# Open the tar file
+docker load -i <file_name>
