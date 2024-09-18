@@ -20,8 +20,14 @@ docker rm <container_ID>
 docker container rm <container_name>
 docker container rm <container_ID>
 
-# Open a shell inside a running container:
+# Open a shell inside a RUNNING container:
 docker exec -it <container_name> sh
+# or
+docker exec -it <container_name> /bin/bash
+# For exited container
+docker start <container_name>
+docker exec -it <container_name> sh
+# or
 docker exec -it <container_name> /bin/bash
 
 # Fetch and follow the logs of a container:
