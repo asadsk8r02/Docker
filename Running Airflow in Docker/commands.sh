@@ -17,3 +17,8 @@ docker compose up airflow-init
 docker compose up -d
 
 # Navigate te http://localhost:8080
+
+
+
+# Connect airflow to postgres - Run this in terminal and connect in dbeaver
+docker-compose up -d --no-deps --build postgres
